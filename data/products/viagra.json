@@ -1,0 +1,86 @@
+{
+  "dataset_id": "ukraine_viagra_initial",
+  "version": "0.1.0",
+  "observed_at": "2026-11-26",
+  "status": "research_draft_not_for_publication",
+  "scope": "Internal model-validation record; not a prescribing or substitution recommendation.",
+  "ingredients": [
+    {"id":"ingredient_sildenafil","preferred_name":"Sildenafil","name_uk":"силденафіл"}
+  ],
+  "brands": [
+    {"id":"brand_viagra","name":"Віагра®","normalized_name":"VIAGRA"}
+  ],
+  "organizations": [
+    {"id":"org_fareva_amboise","name":"Fareva Amboise","country":"France"},
+    {"id":"org_viatris_specialty","name":"Viatris Specialty LLC","country":"United States"}
+  ],
+  "organization_roles": [
+    {"organization_id":"org_fareva_amboise","role":"manufacturer","evidence":"source-25","note":"Confirmed on the official 25 mg record; not yet cross-checked for every strength."},
+    {"organization_id":"org_viatris_specialty","role":"registration_holder","evidence":"source-25","note":"Confirmed on the official 25 mg record; not yet cross-checked for every strength."}
+  ],
+  "drug_products": [
+    {
+      "id":"viagra_25mg_film_coated_tablet",
+      "brand_id":"brand_viagra",
+      "ingredient":{"ingredient_id":"ingredient_sildenafil","role":"active","active_moiety":{"value":25,"unit":"mg"},"salt":{"name":"sildenafil citrate","value":35.112,"unit":"mg"},"equivalence":"35.112 mg sildenafil citrate equivalent to 25 mg sildenafil per tablet","evidence":"source-instruction"},
+      "dosage_form_original":"таблетки, вкриті плівковою оболонкою",
+      "registration_id":"UA/18004/01/01",
+      "packages":[{"id":"viagra_25mg_pack_4","quantity":4,"unit":"tablets","description_original":"4 tablets in one blister; 1 blister in carton","evidence":"source-25"}],
+      "evidence":["source-25","source-instruction"]
+    },
+    {
+      "id":"viagra_50mg_film_coated_tablet",
+      "brand_id":"brand_viagra",
+      "ingredient":{"ingredient_id":"ingredient_sildenafil","role":"active","active_moiety":{"value":50,"unit":"mg"},"salt":{"name":"sildenafil citrate","value":70.225,"unit":"mg"},"equivalence":"70.225 mg sildenafil citrate equivalent to 50 mg sildenafil per tablet","evidence":"source-instruction"},
+      "dosage_form_original":"таблетки, вкриті плівковою оболонкою",
+      "registration_id":"UA/0313/01/02",
+      "packages":[
+        {"id":"viagra_50mg_pack_1_secondary","quantity":1,"unit":"tablets","description_original":"1 tablet in blister; 1 blister","evidence":"source-50-secondary","verification":"unconfirmed"},
+        {"id":"viagra_50mg_pack_4_secondary","quantity":4,"unit":"tablets","description_original":"4 tablets in blister; 1 blister","evidence":"source-50-secondary","verification":"unconfirmed"}
+      ],
+      "evidence":["source-50-secondary","source-register-list","source-instruction"],
+      "record_note":"Official register list confirms the registration number; detailed product and package information currently relies on a secondary reference."
+    },
+    {
+      "id":"viagra_100mg_film_coated_tablet",
+      "brand_id":"brand_viagra",
+      "ingredient":{"ingredient_id":"ingredient_sildenafil","role":"active","active_moiety":{"value":100,"unit":"mg"},"salt":{"name":"sildenafil citrate","value":140.450,"unit":"mg"},"equivalence":"140.450 mg sildenafil citrate equivalent to 100 mg sildenafil per tablet","evidence":"source-instruction"},
+      "dosage_form_original":"таблетки, вкриті плівковою оболонкою",
+      "registration_id":"UA/0313/01/03",
+      "packages":[
+        {"id":"viagra_100mg_pack_1","quantity":1,"unit":"tablets","description_original":"1 tablet per blister; 1 blister","evidence":"source-100"},
+        {"id":"viagra_100mg_pack_2","quantity":2,"unit":"tablets","description_original":"1 tablet per blister; 2 blisters","evidence":"source-100"},
+        {"id":"viagra_100mg_pack_4","quantity":4,"unit":"tablets","description_original":"4 tablets per blister; 1 blister","evidence":"source-100"},
+        {"id":"viagra_100mg_pack_8","quantity":8,"unit":"tablets","description_original":"4 tablets per blister; 2 blisters","evidence":"source-100"}
+      ],
+      "evidence":["source-100","source-instruction"]
+    }
+  ],
+  "registrations": [
+    {"id":"UA/18004/01/01","product_id":"viagra_25mg_film_coated_tablet","status_as_reported":"Чинний","valid_from_as_reported":"2018-02-26","observed_at":"2026-11-26","evidence":"source-25","status_note":"Status displayed by the official record at access time; recheck before publication."},
+    {"id":"UA/0313/01/02","product_id":"viagra_50mg_film_coated_tablet","status_as_reported":null,"valid_from_as_reported":null,"observed_at":"2026-11-26","evidence":"source-register-list","status_note":"Official list confirms the registration number only; detailed current status not yet verified."},
+    {"id":"UA/0313/01/03","product_id":"viagra_100mg_film_coated_tablet","status_as_reported":"Чинний","valid_from_as_reported":null,"observed_at":"2026-11-26","evidence":"source-100","status_note":"Status displayed by the official record at access time; recheck before publication."}
+  ],
+  "sources": [
+    {"id":"source-25","publisher":"Державний реєстр лікарських засобів України","title":"Офіційна картка Віагра 25 мг","url":"https://drlz.moz.gov.ua/register/product/23000","type":"official_state_register","accessed_at":"2026-11-26"},
+    {"id":"source-100","publisher":"Державний реєстр лікарських засобів України","title":"Офіційна картка Віагра 100 мг","url":"https://drlz.moz.gov.ua/register/product/22999","type":"official_state_register","accessed_at":"2026-11-26"},
+    {"id":"source-register-list","publisher":"Державний реєстр лікарських засобів України","title":"Перелік зареєстрованих лікарських засобів","url":"https://drlz.moz.gov.ua/register/products/","type":"official_state_register","accessed_at":"2026-11-26","notes":"List shows registration numbers for Viagra 25, 50 and 100 mg and a separate Viagra ODT entry."},
+    {"id":"source-50-secondary","publisher":"DRLZ.com.ua","title":"Віагра UA/0313/01/02","url":"https://www.drlz.com.ua/lz/viahra-ua-0313-01-02","type":"secondary_reference_not_official_register","accessed_at":"2026-11-26"},
+    {"id":"source-instruction","publisher":"DRLZ.com.ua","title":"Інструкція: Віагра","url":"https://www.drlz.com.ua/lz/viahra-ua-18004-01-01/instruktsiia","type":"secondary_hosted_instruction","accessed_at":"2026-11-26","notes":"Salt mass/equivalence values are secondary-hosted and must be checked against the current official instruction for each registration."},
+    {"id":"source-odt","publisher":"Державний реєстр лікарських засобів України","title":"Офіційна картка Віагра ODT","url":"https://drlz.moz.gov.ua/register/product/23002","type":"official_state_register","accessed_at":"2026-11-26","notes":"ODT is a distinct dosage form and therefore a separate DrugProduct; its full record is not normalized here."}
+  ],
+  "unresolved": [
+    "Recheck current status and history of each registration directly in the official primary register.",
+    "Retrieve and verify the detailed official 50 mg record; its package configurations are provisional.",
+    "Verify salt-mass/equivalence values against current official instructions for each registration.",
+    "Cross-check manufacturer and registration-holder roles separately for 50 mg and 100 mg.",
+    "Verify whether package variants have distinct barcodes; none are asserted here.",
+    "Normalize Viagra ODT from its full official record and instruction as a separate DrugProduct.",
+    "Do not treat the page access date as the date on which the registration record was last changed."
+  ],
+  "publication_gate": {
+    "ready": false,
+    "reason": "Some fields are supported only by secondary sources or need a fresh primary-register check.",
+    "permitted_use": "Internal model validation only."
+  }
+}
