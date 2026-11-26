@@ -184,14 +184,27 @@
       "registration_id": "UA/7064/02/01",
       "packages": [
         {
-          "id": "amoxiclav_suspension_250_62_5_100ml",
-          "package_description_original": "15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірною ложкою або мірним шприцем у картонній коробці",
+          "id": "amoxiclav_suspension_250_62_5_100ml_spoon",
+          "package_description_original": "15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірною ложкою у картонній коробці",
           "container_content": {
             "powder_mass_g": 15.8,
-            "final_volume_ml": 100
+            "final_volume_ml": 100,
+            "measuring_device": "мірна ложка"
           },
           "source_assertion_ids": [
-            "a-package-amoxiclav_suspension_250_62_5_100ml"
+            "a-package-amoxiclav_suspension_250_62_5_100ml_spoon"
+          ]
+        },
+        {
+          "id": "amoxiclav_suspension_250_62_5_100ml_syringe",
+          "package_description_original": "15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірним шприцем у картонній коробці",
+          "container_content": {
+            "powder_mass_g": 15.8,
+            "final_volume_ml": 100,
+            "measuring_device": "мірний шприц"
+          },
+          "source_assertion_ids": [
+            "a-package-amoxiclav_suspension_250_62_5_100ml_syringe"
           ]
         }
       ],
@@ -428,25 +441,51 @@
       "registration_id": "UA/15213/01/01",
       "packages": [
         {
-          "id": "amoxiclav_2s_35ml",
-          "package_description_original": "5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірною ложкою або мірним шприцем у картонній коробці",
+          "id": "amoxiclav_2s_35ml_spoon",
+          "package_description_original": "5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірною ложкою у картонній коробці",
           "container_content": {
             "powder_mass_g": 5.7,
-            "final_volume_ml": 35
+            "final_volume_ml": 35,
+            "measuring_device": "мірна ложка"
           },
           "source_assertion_ids": [
-            "a-package-amoxiclav_2s_35ml"
+            "a-package-amoxiclav_2s_35ml_spoon"
           ]
         },
         {
-          "id": "amoxiclav_2s_70ml",
-          "package_description_original": "11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірною ложкою або мірним шприцем у картонній коробці",
+          "id": "amoxiclav_2s_70ml_syringe",
+          "package_description_original": "11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірним шприцем у картонній коробці",
           "container_content": {
             "powder_mass_g": 11,
-            "final_volume_ml": 70
+            "final_volume_ml": 70,
+            "measuring_device": "мірний шприц"
           },
           "source_assertion_ids": [
-            "a-package-amoxiclav_2s_70ml"
+            "a-package-amoxiclav_2s_70ml_syringe"
+          ]
+        },
+        {
+          "id": "amoxiclav_2s_70ml_spoon",
+          "package_description_original": "11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірною ложкою у картонній коробці",
+          "container_content": {
+            "powder_mass_g": 11,
+            "final_volume_ml": 70,
+            "measuring_device": "мірна ложка"
+          },
+          "source_assertion_ids": [
+            "a-package-amoxiclav_2s_70ml_spoon"
+          ]
+        },
+        {
+          "id": "amoxiclav_2s_35ml_syringe",
+          "package_description_original": "5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірним шприцем у картонній коробці",
+          "container_content": {
+            "powder_mass_g": 5.7,
+            "final_volume_ml": 35,
+            "measuring_device": "мірний шприц"
+          },
+          "source_assertion_ids": [
+            "a-package-amoxiclav_2s_35ml_syringe"
           ]
         }
       ],
@@ -632,25 +671,6 @@
       "observed_at": "2026-11-26",
       "confidence": "high",
       "notes": "Chemical-form mass is not supplied as a separate quantity in this dataset; no conversion has been inferred."
-    },
-    {
-      "id": "a-package-amoxiclav_suspension_250_62_5_100ml",
-      "subject_entity_id": "amoxiclav_suspension_250_62_5_per_5ml",
-      "predicate": "package_configuration",
-      "value": {
-        "package_description_original": "15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірною ложкою або мірним шприцем у картонній коробці",
-        "quantity": null,
-        "unit": null,
-        "container_content": {
-          "powder_mass_g": 15.8,
-          "final_volume_ml": 100
-        }
-      },
-      "source_id": "source-amoxiclav-suspension",
-      "source_locator": "Description of packaging",
-      "observed_at": "2026-11-26",
-      "confidence": "high",
-      "notes": ""
     },
     {
       "id": "a-product-amoxiclav_2x_tablet_500_125",
@@ -933,44 +953,6 @@
       "notes": "Chemical-form mass is not supplied as a separate quantity in this dataset; no conversion has been inferred."
     },
     {
-      "id": "a-package-amoxiclav_2s_35ml",
-      "subject_entity_id": "amoxiclav_2s_suspension_400_57_per_5ml",
-      "predicate": "package_configuration",
-      "value": {
-        "package_description_original": "5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірною ложкою або мірним шприцем у картонній коробці",
-        "quantity": null,
-        "unit": null,
-        "container_content": {
-          "powder_mass_g": 5.7,
-          "final_volume_ml": 35
-        }
-      },
-      "source_id": "source-amoxiclav-2s",
-      "source_locator": "Description of packaging",
-      "observed_at": "2026-11-26",
-      "confidence": "high",
-      "notes": ""
-    },
-    {
-      "id": "a-package-amoxiclav_2s_70ml",
-      "subject_entity_id": "amoxiclav_2s_suspension_400_57_per_5ml",
-      "predicate": "package_configuration",
-      "value": {
-        "package_description_original": "11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірною ложкою або мірним шприцем у картонній коробці",
-        "quantity": null,
-        "unit": null,
-        "container_content": {
-          "powder_mass_g": 11,
-          "final_volume_ml": 70
-        }
-      },
-      "source_id": "source-amoxiclav-2s",
-      "source_locator": "Description of packaging",
-      "observed_at": "2026-11-26",
-      "confidence": "high",
-      "notes": ""
-    },
-    {
       "id": "a-orgrole-1",
       "subject_entity_id": "UA/7064/02/01",
       "predicate": "registration_holder",
@@ -1164,6 +1146,114 @@
       "observed_at": "2026-11-26",
       "confidence": "high",
       "notes": ""
+    },
+    {
+      "id": "a-package-amoxiclav_suspension_250_62_5_100ml_spoon",
+      "subject_entity_id": "amoxiclav_suspension_250_62_5_per_5ml",
+      "predicate": "package_configuration",
+      "value": {
+        "package_description_original": "15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірною ложкою у картонній коробці",
+        "container_content": {
+          "powder_mass_g": 15.8,
+          "final_volume_ml": 100,
+          "measuring_device": "мірна ложка"
+        }
+      },
+      "source_id": "source-amoxiclav-suspension",
+      "source_locator": "Комплекты → Опис фасування",
+      "observed_at": "2026-11-26",
+      "confidence": "high",
+      "notes": "Отдельный комплект/вариант упаковки в официальной карточке реестра."
+    },
+    {
+      "id": "a-package-amoxiclav_suspension_250_62_5_100ml_syringe",
+      "subject_entity_id": "amoxiclav_suspension_250_62_5_per_5ml",
+      "predicate": "package_configuration",
+      "value": {
+        "package_description_original": "15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірним шприцем у картонній коробці",
+        "container_content": {
+          "powder_mass_g": 15.8,
+          "final_volume_ml": 100,
+          "measuring_device": "мірний шприц"
+        }
+      },
+      "source_id": "source-amoxiclav-suspension",
+      "source_locator": "Комплекты → Опис фасування",
+      "observed_at": "2026-11-26",
+      "confidence": "high",
+      "notes": "Отдельный комплект/вариант упаковки в официальной карточке реестра."
+    },
+    {
+      "id": "a-package-amoxiclav_2s_35ml_spoon",
+      "subject_entity_id": "amoxiclav_2s_suspension_400_57_per_5ml",
+      "predicate": "package_configuration",
+      "value": {
+        "package_description_original": "5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірною ложкою у картонній коробці",
+        "container_content": {
+          "powder_mass_g": 5.7,
+          "final_volume_ml": 35,
+          "measuring_device": "мірна ложка"
+        }
+      },
+      "source_id": "source-amoxiclav-2s",
+      "source_locator": "Комплекты → Опис фасування",
+      "observed_at": "2026-11-26",
+      "confidence": "high",
+      "notes": "Отдельный комплект/вариант упаковки в официальной карточке реестра."
+    },
+    {
+      "id": "a-package-amoxiclav_2s_70ml_syringe",
+      "subject_entity_id": "amoxiclav_2s_suspension_400_57_per_5ml",
+      "predicate": "package_configuration",
+      "value": {
+        "package_description_original": "11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірним шприцем у картонній коробці",
+        "container_content": {
+          "powder_mass_g": 11,
+          "final_volume_ml": 70,
+          "measuring_device": "мірний шприц"
+        }
+      },
+      "source_id": "source-amoxiclav-2s",
+      "source_locator": "Комплекты → Опис фасування",
+      "observed_at": "2026-11-26",
+      "confidence": "high",
+      "notes": "Отдельный комплект/вариант упаковки в официальной карточке реестра."
+    },
+    {
+      "id": "a-package-amoxiclav_2s_70ml_spoon",
+      "subject_entity_id": "amoxiclav_2s_suspension_400_57_per_5ml",
+      "predicate": "package_configuration",
+      "value": {
+        "package_description_original": "11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірною ложкою у картонній коробці",
+        "container_content": {
+          "powder_mass_g": 11,
+          "final_volume_ml": 70,
+          "measuring_device": "мірна ложка"
+        }
+      },
+      "source_id": "source-amoxiclav-2s",
+      "source_locator": "Комплекты → Опис фасування",
+      "observed_at": "2026-11-26",
+      "confidence": "high",
+      "notes": "Отдельный комплект/вариант упаковки в официальной карточке реестра."
+    },
+    {
+      "id": "a-package-amoxiclav_2s_35ml_syringe",
+      "subject_entity_id": "amoxiclav_2s_suspension_400_57_per_5ml",
+      "predicate": "package_configuration",
+      "value": {
+        "package_description_original": "5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірним шприцем у картонній коробці",
+        "container_content": {
+          "powder_mass_g": 5.7,
+          "final_volume_ml": 35,
+          "measuring_device": "мірний шприц"
+        }
+      },
+      "source_id": "source-amoxiclav-2s",
+      "source_locator": "Комплекты → Опис фасування",
+      "observed_at": "2026-11-26",
+      "confidence": "high",
+      "notes": "Отдельный комплект/вариант упаковки в официальной карточке реестра."
     }
   ]
 }
