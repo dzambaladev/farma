@@ -293,8 +293,7 @@
       "title": "Офіційна картка Віагра 25 мг",
       "url": "https://drlz.moz.gov.ua/register/product/23000",
       "type": "official_state_register",
-      "accessed_at": "2026-11-26",
-      "source_type": "official_state_register"
+      "accessed_at": "2026-11-26"
     },
     {
       "id": "source-100",
@@ -302,8 +301,7 @@
       "title": "Офіційна картка Віагра 100 мг",
       "url": "https://drlz.moz.gov.ua/register/product/22999",
       "type": "official_state_register",
-      "accessed_at": "2026-11-26",
-      "source_type": "official_state_register"
+      "accessed_at": "2026-11-26"
     },
     {
       "id": "source-register-list",
@@ -312,8 +310,7 @@
       "url": "https://drlz.moz.gov.ua/register/products/",
       "type": "official_state_register",
       "accessed_at": "2026-11-26",
-      "notes": "List shows registration numbers for Viagra 25, 50 and 100 mg and a separate Viagra ODT entry.",
-      "source_type": "official_state_register"
+      "notes": "List shows registration numbers for Viagra 25, 50 and 100 mg and a separate Viagra ODT entry."
     },
     {
       "id": "source-50-secondary",
@@ -321,8 +318,7 @@
       "title": "Віагра UA/0313/01/02",
       "url": "https://www.drlz.com.ua/lz/viahra-ua-0313-01-02",
       "type": "secondary_reference_not_official_register",
-      "accessed_at": "2026-11-26",
-      "source_type": "secondary_reference_not_official_register"
+      "accessed_at": "2026-11-26"
     },
     {
       "id": "source-instruction",
@@ -331,8 +327,7 @@
       "url": "https://www.drlz.com.ua/lz/viahra-ua-18004-01-01/instruktsiia",
       "type": "secondary_hosted_instruction",
       "accessed_at": "2026-11-26",
-      "notes": "Salt mass/equivalence values are secondary-hosted and must be checked against the current official instruction for each registration.",
-      "source_type": "secondary_hosted_instruction"
+      "notes": "Salt mass/equivalence values are secondary-hosted and must be checked against the current official instruction for each registration."
     },
     {
       "id": "source-odt",
@@ -341,8 +336,7 @@
       "url": "https://drlz.moz.gov.ua/register/product/23002",
       "type": "official_state_register",
       "accessed_at": "2026-11-26",
-      "notes": "ODT is a distinct dosage form and therefore a separate DrugProduct; its full record is not normalized here.",
-      "source_type": "official_state_register"
+      "notes": "ODT is a distinct dosage form and therefore a separate DrugProduct; its full record is not normalized here."
     }
   ],
   "unresolved": [
