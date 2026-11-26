@@ -52,10 +52,11 @@
 - `id`;
 - `brand_id` — nullable;
 - `ingredients[]` — состав и роль каждого вещества;
-- `strength` — структурированная дозировка;
-- `dosage_form` — форма из контролируемого справочника или исходное значение;
+- `ingredients[]` — состав и роль каждого вещества; количественные значения и их основа хранятся в `ingredients[].strength`;
+- `strength_expression_original` — исходная запись дозировки продукта;
+- `dosage_form_original` — исходное значение лекарственной формы;
 - `route` — путь введения, только если подтверждён;
-- `registration_ids[]`;
+- `registration_id` — ссылка на регистрационную запись в текущем MVP (в дальнейшем допускается переход к `registration_ids[]`);
 - `source_assertion_ids[]`.
 
 ### IngredientStrength
@@ -91,7 +92,7 @@
 - `country`;
 - `registration_number`;
 - `registered_name_original`;
-- `linked_drug_product_ids[]`;
+- `product_id` — ссылка на один продукт в текущем MVP (в дальнейшем может быть заменена на `linked_drug_product_ids[]`);
 - `source_assertion_ids[]`.
 
 ### RegistrationVersion
@@ -113,7 +114,7 @@
 - `publisher`;
 - `title`;
 - `url`;
-- `source_type` — государственный реестр, инструкция, сайт производителя, вторичный справочник и т. п.;
+- `type` — государственный реестр, инструкция, сайт производителя, вторичный справочник и т. п.;
 - `published_at` — nullable;
 - `accessed_at`;
 - `notes`.
@@ -131,6 +132,10 @@
 - `notes`.
 
 Для MVP допустимо хранить массивы `source_assertion_ids` у сущностей. В дальнейшем отдельная таблица утверждений позволит иметь несколько конкурирующих значений одного поля без потери истории.
+
+### Представление регистрации в MVP
+
+Полная сущность `RegistrationVersion` описывает целевую модель истории наблюдений. В текущих JSON-файлах MVP поля последнего наблюдения (`status_as_reported`, `valid_from_as_reported`, `valid_to_as_reported`, `observed_at`, `source_id`) временно хранятся непосредственно в `Registration`. Это упрощение не означает, что статус является постоянным свойством препарата; при накоплении нескольких наблюдений будет выделена отдельная `RegistrationVersion`.
 
 ## 3. Связи
 
