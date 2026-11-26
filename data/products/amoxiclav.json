@@ -1,0 +1,139 @@
+{
+  "dataset_id": "ukraine_amoxiclav_initial",
+  "version": "0.1.0",
+  "observed_at": "2026-11-26",
+  "status": "research_draft_not_for_publication",
+  "scope": "Internal model-validation record for selected Amoxiclav registrations in Ukraine. Informational catalogue data only; not a prescribing or substitution recommendation.",
+  "ingredients": [
+    {"id":"ingredient_amoxicillin","preferred_name":"Amoxicillin","name_uk":"амоксицилін","registered_chemical_forms":["Амоксициліну тригідрат"]},
+    {"id":"ingredient_clavulanic_acid","preferred_name":"Clavulanic acid","name_uk":"кислота клавуланова","registered_chemical_forms":["Калію клавуланат"]}
+  ],
+  "brands": [
+    {"id":"brand_amoxiclav","name":"АМОКСИКЛАВ®","normalized_name":"АМОКСИКЛАВ","trademark_symbol":"®"},
+    {"id":"brand_amoxiclav_2x","name":"АМОКСИКЛАВ® 2Х","normalized_name":"АМОКСИКЛАВ 2Х","trademark_symbol":"®"},
+    {"id":"brand_amoxiclav_quiktab","name":"АМОКСИКЛАВ® КВІКТАБ","normalized_name":"АМОКСИКЛАВ КВІКТАБ","trademark_symbol":"®"},
+    {"id":"brand_amoxiclav_2s","name":"АМОКСИКЛАВ® 2S","normalized_name":"АМОКСИКЛАВ 2S","trademark_symbol":"®"}
+  ],
+  "organizations": [
+    {"id":"org_sandoz_pharmaceuticals","name":"Сандоз Фармасьютікалз д.д."},
+    {"id":"org_sandoz_kundl","name":"Сандоз ГмбХ - Виробнича дільниця Антиінфекційні ГЛЗ та Хімічні Операції Кундль (АІХО ГЛЗ Кундль)"}
+  ],
+  "organization_roles": [
+    {"organization_id":"org_sandoz_pharmaceuticals","role":"registration_holder","related_entity_id":"UA/7064/02/01","evidence":"source-amoxiclav-suspension"},
+    {"organization_id":"org_sandoz_pharmaceuticals","role":"registration_holder","related_entity_id":"UA/7064/01/01","evidence":"source-amoxiclav-2x-500"},
+    {"organization_id":"org_sandoz_pharmaceuticals","role":"registration_holder","related_entity_id":"UA/7064/01/02","evidence":"source-amoxiclav-2x-875"},
+    {"organization_id":"org_sandoz_pharmaceuticals","role":"registration_holder","related_entity_id":"UA/3011/04/02","evidence":"source-amoxiclav-quiktab"},
+    {"organization_id":"org_sandoz_pharmaceuticals","role":"registration_holder","related_entity_id":"UA/15213/01/01","evidence":"source-amoxiclav-2s"},
+    {"organization_id":"org_sandoz_kundl","role":"manufacturer","related_entity_id":"UA/7064/02/01","evidence":"source-amoxiclav-suspension"},
+    {"organization_id":"org_sandoz_kundl","role":"manufacturer","related_entity_id":"UA/7064/01/01","evidence":"source-amoxiclav-2x-500"},
+    {"organization_id":"org_sandoz_kundl","role":"manufacturer","related_entity_id":"UA/7064/01/02","evidence":"source-amoxiclav-2x-875"},
+    {"organization_id":"org_sandoz_kundl","role":"manufacturer","related_entity_id":"UA/3011/04/02","evidence":"source-amoxiclav-quiktab"},
+    {"organization_id":"org_sandoz_kundl","role":"manufacturer","related_entity_id":"UA/15213/01/01","evidence":"source-amoxiclav-2s"}
+  ],
+  "drug_products": [
+    {
+      "id":"amoxiclav_suspension_250_62_5_per_5ml",
+      "brand_id":"brand_amoxiclav",
+      "ingredients":[
+        {"ingredient_id":"ingredient_amoxicillin","role":"active","strength":{"active_moiety_value":250,"active_moiety_unit":"mg","salt_or_ester_name":"Амоксициліну тригідрат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"250 мг","basis":"per_5_ml","source":"source-amoxiclav-suspension"}},
+        {"ingredient_id":"ingredient_clavulanic_acid","role":"active","strength":{"active_moiety_value":62.5,"active_moiety_unit":"mg","salt_or_ester_name":"Калію клавуланат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"62,5 мг","basis":"per_5_ml","source":"source-amoxiclav-suspension"}}
+      ],
+      "strength_expression_original":"250 мг/62,5 мг в 5 мл",
+      "dosage_form_original":"порошок для оральної суспензії",
+      "route":null,
+      "registration_id":"UA/7064/02/01",
+      "packages":[
+        {"id":"amoxiclav_suspension_250_62_5_100ml","package_description_original":"15,8 г порошку у флаконі (для 100 мл суспензії), 1 флакон з мірною ложкою або мірним шприцем у картонній коробці","container_content":{"powder_mass_g":15.8,"final_volume_ml":100},"evidence":"source-amoxiclav-suspension"}
+      ]
+    },
+    {
+      "id":"amoxiclav_2x_tablet_500_125",
+      "brand_id":"brand_amoxiclav_2x",
+      "ingredients":[
+        {"ingredient_id":"ingredient_amoxicillin","role":"active","strength":{"active_moiety_value":500,"active_moiety_unit":"mg","salt_or_ester_name":"Амоксициліну тригідрат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"500 мг","basis":"per_tablet","source":"source-amoxiclav-2x-500"}},
+        {"ingredient_id":"ingredient_clavulanic_acid","role":"active","strength":{"active_moiety_value":125,"active_moiety_unit":"mg","salt_or_ester_name":"Калію клавуланат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"125 мг","basis":"per_tablet","source":"source-amoxiclav-2x-500"}}
+      ],
+      "strength_expression_original":"500 мг/125 мг",
+      "dosage_form_original":"таблетки, вкриті плівковою оболонкою",
+      "route":null,
+      "registration_id":"UA/7064/01/01",
+      "packages":[
+        {"id":"amoxiclav_2x_500_14_blister","quantity":14,"unit":"tablets","package_description_original":"по 7 таблеток у блістері, по 2 блістери у картонній коробці","evidence":"source-amoxiclav-2x-500"},
+        {"id":"amoxiclav_2x_500_14_strip","quantity":14,"unit":"tablets","package_description_original":"по 7 таблеток у стрипі, по 2 стрипи у картонній коробці","evidence":"source-amoxiclav-2x-500"}
+      ]
+    },
+    {
+      "id":"amoxiclav_2x_tablet_875_125",
+      "brand_id":"brand_amoxiclav_2x",
+      "ingredients":[
+        {"ingredient_id":"ingredient_amoxicillin","role":"active","strength":{"active_moiety_value":875,"active_moiety_unit":"mg","salt_or_ester_name":"Амоксициліну тригідрат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"875 мг","basis":"per_tablet","source":"source-amoxiclav-2x-875"}},
+        {"ingredient_id":"ingredient_clavulanic_acid","role":"active","strength":{"active_moiety_value":125,"active_moiety_unit":"mg","salt_or_ester_name":"Калію клавуланат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"125 мг","basis":"per_tablet","source":"source-amoxiclav-2x-875"}}
+      ],
+      "strength_expression_original":"875 мг/125 мг",
+      "dosage_form_original":"таблетки, вкриті плівковою оболонкою",
+      "route":null,
+      "registration_id":"UA/7064/01/02",
+      "packages":[
+        {"id":"amoxiclav_2x_875_14","quantity":14,"unit":"tablets","package_description_original":"по 7 таблеток у блістері, по 2 блістери у картонній коробці","evidence":"source-amoxiclav-2x-875"}
+      ]
+    },
+    {
+      "id":"amoxiclav_quiktab_tablet_500_125",
+      "brand_id":"brand_amoxiclav_quiktab",
+      "ingredients":[
+        {"ingredient_id":"ingredient_amoxicillin","role":"active","strength":{"active_moiety_value":500,"active_moiety_unit":"mg","salt_or_ester_name":"Амоксициліну тригідрат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"500 мг","basis":"per_tablet","source":"source-amoxiclav-quiktab"}},
+        {"ingredient_id":"ingredient_clavulanic_acid","role":"active","strength":{"active_moiety_value":125,"active_moiety_unit":"mg","salt_or_ester_name":"Калію клавуланат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"125 мг","basis":"per_tablet","source":"source-amoxiclav-quiktab"}}
+      ],
+      "strength_expression_original":"500 мг/125 мг",
+      "dosage_form_original":"таблетки, що диспергуються",
+      "route":null,
+      "registration_id":"UA/3011/04/02",
+      "packages":[
+        {"id":"amoxiclav_quiktab_10","quantity":10,"unit":"tablets","package_description_original":"по 5 таблеток у блістері, по 2 блістери у картонній коробці","evidence":"source-amoxiclav-quiktab"},
+        {"id":"amoxiclav_quiktab_20","quantity":20,"unit":"tablets","package_description_original":"по 5 таблеток у блістері, по 4 блістери у картонній коробці","evidence":"source-amoxiclav-quiktab"}
+      ]
+    },
+    {
+      "id":"amoxiclav_2s_suspension_400_57_per_5ml",
+      "brand_id":"brand_amoxiclav_2s",
+      "ingredients":[
+        {"ingredient_id":"ingredient_amoxicillin","role":"active","strength":{"active_moiety_value":400,"active_moiety_unit":"mg","salt_or_ester_name":"Амоксициліну тригідрат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"400 мг","basis":"per_5_ml","source":"source-amoxiclav-2s"}},
+        {"ingredient_id":"ingredient_clavulanic_acid","role":"active","strength":{"active_moiety_value":57,"active_moiety_unit":"mg","salt_or_ester_name":"Калію клавуланат","salt_or_ester_value":null,"salt_or_ester_unit":null,"strength_expression_original":"57 мг","basis":"per_5_ml","source":"source-amoxiclav-2s"}}
+      ],
+      "strength_expression_original":"400 мг/57 мг в 5 мл",
+      "dosage_form_original":"порошок для оральної суспензії",
+      "route":null,
+      "registration_id":"UA/15213/01/01",
+      "packages":[
+        {"id":"amoxiclav_2s_35ml","package_description_original":"5,70 г порошку у флаконі для отримання 35 мл суспензії; 1 флакон з мірною ложкою або мірним шприцем у картонній коробці","container_content":{"powder_mass_g":5.70,"final_volume_ml":35},"evidence":"source-amoxiclav-2s"},
+        {"id":"amoxiclav_2s_70ml","package_description_original":"11,0 г порошку у флаконі для отримання 70 мл суспензії; 1 флакон з мірною ложкою або мірним шприцем у картонній коробці","container_content":{"powder_mass_g":11.0,"final_volume_ml":70},"evidence":"source-amoxiclav-2s"}
+      ]
+    }
+  ],
+  "registrations": [
+    {"id":"UA/7064/02/01","product_id":"amoxiclav_suspension_250_62_5_per_5ml","registered_name_original":"АМОКСИКЛАВ®","status_as_reported":"Чинний","valid_from_as_reported":"2017-08-28","valid_to_as_reported":"Безстроково","observed_at":"2026-11-26","source":"source-amoxiclav-suspension","record_document_date":"2025-02-10"},
+    {"id":"UA/7064/01/01","product_id":"amoxiclav_2x_tablet_500_125","registered_name_original":"АМОКСИКЛАВ® 2Х","status_as_reported":"Чинний","valid_from_as_reported":"2019-10-31","valid_to_as_reported":"Безстроково","observed_at":"2026-11-26","source":"source-amoxiclav-2x-500","record_document_date":"2025-03-05"},
+    {"id":"UA/7064/01/02","product_id":"amoxiclav_2x_tablet_875_125","registered_name_original":"АМОКСИКЛАВ® 2Х","status_as_reported":"Чинний","valid_from_as_reported":"2019-10-31","valid_to_as_reported":"Безстроково","observed_at":"2026-11-26","source":"source-amoxiclav-2x-875","record_document_date":"2025-03-05"},
+    {"id":"UA/3011/04/02","product_id":"amoxiclav_quiktab_tablet_500_125","registered_name_original":"АМОКСИКЛАВ® КВІКТАБ","status_as_reported":"Чинний","valid_from_as_reported":"2017-01-31","valid_to_as_reported":"Безстроково","observed_at":"2026-11-26","source":"source-amoxiclav-quiktab","record_document_date":"2026-03-26"},
+    {"id":"UA/15213/01/01","product_id":"amoxiclav_2s_suspension_400_57_per_5ml","registered_name_original":"АМОКСИКЛАВ® 2S","status_as_reported":"Чинний","valid_from_as_reported":"2021-03-16","valid_to_as_reported":"Безстроково","observed_at":"2026-11-26","source":"source-amoxiclav-2s","record_document_date":"2026-11-16","implementation_period_note":"Реєстр показує імплементаційний період змін версії 7 до 2027-05-16."}
+  ],
+  "sources": [
+    {"id":"source-amoxiclav-suspension","publisher":"Державний реєстр лікарських засобів України","title":"АМОКСИКЛАВ® — порошок для оральної суспензії, UA/7064/02/01","url":"https://drlz.moz.gov.ua/register/product/16525","type":"official_state_register","accessed_at":"2026-11-26"},
+    {"id":"source-amoxiclav-2x-500","publisher":"Державний реєстр лікарських засобів України","title":"АМОКСИКЛАВ® 2Х — 500 мг/125 мг, UA/7064/01/01","url":"https://drlz.moz.gov.ua/register/product/16530","type":"official_state_register","accessed_at":"2026-11-26"},
+    {"id":"source-amoxiclav-2x-875","publisher":"Державний реєстр лікарських засобів України","title":"АМОКСИКЛАВ® 2Х — 875 мг/125 мг, UA/7064/01/02","url":"https://drlz.moz.gov.ua/register/product/16529","type":"official_state_register","accessed_at":"2026-11-26"},
+    {"id":"source-amoxiclav-quiktab","publisher":"Державний реєстр лікарських засобів України","title":"АМОКСИКЛАВ® КВІКТАБ — 500 мг/125 мг, UA/3011/04/02","url":"https://drlz.moz.gov.ua/register/product/16532","type":"official_state_register","accessed_at":"2026-11-26"},
+    {"id":"source-amoxiclav-2s","publisher":"Державний реєстр лікарських засобів України","title":"АМОКСИКЛАВ® 2S — 400 мг/57 мг в 5 мл, UA/15213/01/01","url":"https://drlz.moz.gov.ua/register/product/16528","type":"official_state_register","accessed_at":"2026-11-26"}
+  ],
+  "unresolved": [
+    "Check official product instructions for the precise chemical-salt masses corresponding to the labelled active-component strengths; salt masses are intentionally not calculated or populated.",
+    "Confirm whether all listed strengths and package configurations remain commercially supplied; registration status does not establish market availability.",
+    "Review the current implementation-period notice and version history for Amoxiclav 2S before publishing its current labelling and leaflet data.",
+    "Check whether the manufacturer/production-site role is represented with greater detail in linked registration documents; this record preserves the role as shown on each register card.",
+    "Add official instructions as separate source records and extract product composition only after validating the source documents."
+  ],
+  "publication_gate": {
+    "ready": false,
+    "reason": "The record is a deliberately limited model-validation sample. It does not yet include verified salt-equivalence quantities or full instruction-document extraction.",
+    "permitted_use": "Internal model validation only."
+  }
+}
