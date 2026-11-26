@@ -15,8 +15,8 @@
     {"id":"org_viatris_specialty","name":"Viatris Specialty LLC","country":"United States"}
   ],
   "organization_roles": [
-    {"organization_id":"org_fareva_amboise","role":"manufacturer","evidence":"source-25","note":"Confirmed on the official 25 mg record; not yet cross-checked for every strength."},
-    {"organization_id":"org_viatris_specialty","role":"registration_holder","evidence":"source-25","note":"Confirmed on the official 25 mg record; not yet cross-checked for every strength."}
+    {"organization_id":"org_fareva_amboise","role":"manufacturer","related_entity_id":"viagra_25mg_film_coated_tablet","evidence":"source-25","note":"Confirmed on the official 25 mg record; not yet cross-checked for every strength."},
+    {"organization_id":"org_viatris_specialty","role":"registration_holder","related_entity_id":"viagra_25mg_film_coated_tablet","evidence":"source-25","note":"Confirmed on the official 25 mg record; not yet cross-checked for every strength."}
   ],
   "drug_products": [
     {
